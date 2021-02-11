@@ -18,9 +18,37 @@
       @endforeach
     </nav>
     <main>
-      @foreach ($data as $key)
-      <img src="{{$key['src']}}" alt="tipi di pasta">
-      @endforeach
+      <section>
+        <h1>le lunghe</h1>
+        <div class="container">
+          @foreach ($data as $item)
+          @if ($item["tipo"] === "lunga")
+          <img src="{{$item['src']}}" alt="">
+          @endif
+          @endforeach
+        </div>
+      </section>
+      <section>
+        <h1>le corte</h1>
+        <div class="container">
+          @foreach ($data as $item)
+          @if ($item["tipo"] === "corta")
+          <img src="{{$item['src']}}" alt="">
+          @endif
+          @endforeach
+        </div>
+      </section>
+      <section>
+        <h1>le cortissime</h1>
+        <div class="container">
+          @foreach ($data as $item)
+          @if ($item["tipo"] === "cortissima")
+          <img src="{{$item['src']}}" alt="">
+          @endif
+          @endforeach
+        </div>
+      </section>
+
     </main>
   </body>
   </html>

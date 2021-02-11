@@ -27,12 +27,21 @@ nav{
     text-decoration: underline;
   }
 }
-
 main{
-  display: flex;
-  flex-wrap: wrap;
+  text-align: center;
+  .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  h1{
+    padding: 10px 0;
+    text-transform: uppercase;
+    color: #31318b;
+    font-weight: bold;
+  }
   img{
     width: 33%;
-    padding: 30px 10px;
+    padding: 20px 20px;
   }
 }
