@@ -31,12 +31,14 @@ nav a:hover {
 
 main {
   text-align: center;
+  background-image: url("/img/fondo-pag-speciali.jpg");
 }
 
 main .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 main h1 {
@@ -48,6 +50,6 @@ main h1 {
 
 main img {
   width: 33%;
-  padding: 20px 20px;
+  padding: 20px 18px;
 }
 

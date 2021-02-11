@@ -27,12 +27,18 @@ nav{
     text-decoration: underline;
   }
 }
+
+
 main{
   text-align: center;
+  background-image: url('/img/fondo-pag-speciali.jpg');
+
+
   .container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
   }
   h1{
     padding: 10px 0;
@@ -40,8 +46,9 @@ main{
     color: #31318b;
     font-weight: bold;
   }
+
   img{
     width: 33%;
-    padding: 20px 20px;
+    padding: 20px 18px;
   }
 }

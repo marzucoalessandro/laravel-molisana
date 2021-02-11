@@ -23,9 +23,14 @@
         <div class="container">
           @foreach ($data as $item)
           @if ($item["tipo"] === "lunga")
-          <img src="{{$item['src']}}" alt="">
+
+            <img src="{{$item['src']}}" alt="">
+
           @endif
           @endforeach
+
+
+
         </div>
       </section>
       <section>
@@ -33,7 +38,10 @@
         <div class="container">
           @foreach ($data as $item)
           @if ($item["tipo"] === "corta")
-          <img src="{{$item['src']}}" alt="">
+
+
+            <img src="{{$item['src']}}" alt="">
+
           @endif
           @endforeach
         </div>
@@ -43,12 +51,14 @@
         <div class="container">
           @foreach ($data as $item)
           @if ($item["tipo"] === "cortissima")
-          <img src="{{$item['src']}}" alt="">
+
+
+            <img src="{{$item['src']}}" alt="">
+          
           @endif
           @endforeach
         </div>
       </section>
-
     </main>
   </body>
   </html>
