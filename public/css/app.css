@@ -24,6 +24,11 @@ nav a {
   color: white;
 }
 
+nav a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -31,6 +36,6 @@ main {
 
 main img {
   width: 33%;
-  padding: 10px;
+  padding: 30px 10px;
 }
 
