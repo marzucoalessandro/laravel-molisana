@@ -1,0 +1,23 @@
+header{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+
+nav{
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #58b458;
+  a{
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+main{
+  background-image: url(./img/fondo-pag-speciali.jpg);
+}
