@@ -18,7 +18,9 @@
       @endforeach
     </nav>
     <main>
-      
+      @foreach ($data as $key)
+      <img src="{{$key['src']}}" alt="tipi di pasta">
+      @endforeach
     </main>
   </body>
   </html>
