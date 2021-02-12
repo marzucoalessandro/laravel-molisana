@@ -46,16 +46,16 @@ main{
     opacity: 0.7;
   }
   h4{
+    display: none;
     position: absolute;
     top: 35%;
     left: 50%;
     transform: translate(-50%);
-    display: none;
   }
   .white:hover + img.fork {
     display: block;
   }
-  .white:hover h4{
+  .white:hover + h4 {
     display: block;
   }
 }

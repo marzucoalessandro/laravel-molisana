@@ -84,18 +84,18 @@ main .white:hover {
 }
 
 main h4 {
+  display: none;
   position: absolute;
   top: 35%;
   left: 50%;
   transform: translate(-50%);
-  display: none;
 }
 
 main .white:hover + img.fork {
   display: block;
 }
 
-main .white:hover h4 {
+main .white:hover + h4 {
   display: block;
 }
 
