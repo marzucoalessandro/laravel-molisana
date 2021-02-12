@@ -52,7 +52,10 @@ main{
     transform: translate(-50%);
     display: none;
   }
-  .white:hover + img.fork, .white:hover + h4 {
+  .white:hover + img.fork {
+    display: block;
+  }
+  .white:hover h4{
     display: block;
   }
 }
