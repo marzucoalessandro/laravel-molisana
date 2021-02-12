@@ -81,7 +81,7 @@ main{
     top: 35%;
     left: 50%;
     transform: translate(-50%);
-    
+    display: none;
   }
   .white:hover + img.fork, .white:hover + h4 {
     display: block;

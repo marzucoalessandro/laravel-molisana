@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
   <head>
     <meta charset="utf-8">
@@ -8,13 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
   </head>
   <body>
-    <!-- costruisco il sito che verrà poi destrutturato nei vari partials -->
+
     <header>
       <img src="{{asset ('img/logo.png')}}" alt="">
     </header>
     <nav>
       @foreach ($link as $item)
-      <a href="#">{{$item}}</a>
+      <a href="{{$item['link']}}">{{$item['nome']}}</a>
       @endforeach
     </nav>
     <main>
@@ -65,4 +65,11 @@
       </section>
     </main>
   </body>
-</html>
+</html> -->
+@extends('layout.head')
+
+@include('layout.header')
+
+@include('layout.main')
+
+@extends('layout.foot')

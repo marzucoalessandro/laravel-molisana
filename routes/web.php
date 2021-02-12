@@ -15,9 +15,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $link = [
-      "Home",
-      "Prodotti",
-      "Contatti"
+      [
+        "nome" => "home",
+        "link" => "products"
+      ],
+      [
+        "nome" => "prodotti",
+        "link" => "/"
+      ],
+      [
+        "nome" => "contatti",
+        "link" => "about"
+      ]
+
     ];
     $data = [
    [
@@ -142,4 +152,46 @@ Route::get('/', function () {
   ]
 ];
     return view("welcome", compact("link", "data"));
+});
+
+
+
+Route::get('about', function () {
+  $link = [
+    [
+      "nome" => "home",
+      "link" => "products"
+    ],
+    [
+      "nome" => "prodotti",
+      "link" => "/"
+    ],
+    [
+      "nome" => "contatti",
+      "link" => "about"
+    ]
+
+  ];
+return view("about", compact('link'));
+
+});
+
+Route::get('products', function () {
+  $link = [
+    [
+      "nome" => "home",
+      "link" => "products"
+    ],
+    [
+      "nome" => "prodotti",
+      "link" => "/"
+    ],
+    [
+      "nome" => "contatti",
+      "link" => "about"
+    ]
+
+  ];
+return view("products", compact('link'));
+
 });
