@@ -1,4 +1,4 @@
-@extends('layout.head')
+@include('layout.head')
 @include('layout.header')
 
-@extends('layout.foot')
+@include('layout.foot')
