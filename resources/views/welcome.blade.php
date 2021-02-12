@@ -23,14 +23,14 @@
         <div class="container">
           @foreach ($data as $item)
           @if ($item["tipo"] === "lunga")
-
-            <img src="{{$item['src']}}" alt="">
-
+            <div class="overlay">
+              <img src="{{$item['src']}}" alt="">
+              <div class="white"></div>
+              <img class="fork" src="{{asset ('img/icon.svg')}}" alt="">
+              <h4> {{$item["titolo"]}} </h4>
+            </div>
           @endif
           @endforeach
-
-
-
         </div>
       </section>
       <section>
@@ -38,10 +38,12 @@
         <div class="container">
           @foreach ($data as $item)
           @if ($item["tipo"] === "corta")
-
-
-            <img src="{{$item['src']}}" alt="">
-
+            <div class="overlay">
+              <img src="{{$item['src']}}" alt="">
+              <div class="white"></div>
+              <img class="fork" src="{{asset ('img/icon.svg')}}" alt="">
+              <h4> {{$item["titolo"]}} </h4>
+            </div>
           @endif
           @endforeach
         </div>
@@ -51,14 +53,16 @@
         <div class="container">
           @foreach ($data as $item)
           @if ($item["tipo"] === "cortissima")
-
-
-            <img src="{{$item['src']}}" alt="">
-          
+            <div class="overlay">
+              <img src="{{$item['src']}}" alt="">
+              <div class="white"></div>
+              <img class="fork" src="{{asset ('img/icon.svg')}}" alt="">
+              <h4> {{$item["titolo"]}} </h4>
+            </div>
           @endif
           @endforeach
         </div>
       </section>
     </main>
   </body>
-  </html>
+</html>
