@@ -1,8 +1,18 @@
-@include('layout.head')
 
-@include('layout.header')
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/app.css">
+    <title>La molisana</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+  </head>
+  <body>
+    @include ('layout.logo')
+    @include ('layout.header')
 
-@include('layout.main')
+    @yield('main')
 
-
-@include('layout.foot')
+  </body>
+</html>
